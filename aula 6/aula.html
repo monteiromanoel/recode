@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6 - Tabela</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            margin: auto;
+            padding: auto;
+            width: 80%;
+            height: 80vh;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        div {
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+        }
+
+        body {
+            background-color: lightgray;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            color: tomato;
+            font-size: 50px;
+        }
+
+        table{
+            padding: 5px;
+            margin: 10px;
+            border: 1px solid rgb(228, 226, 226);
+            box-shadow: 5px 5px 5px rgba(88, 87, 87, 0.150);
+        }
+
+        thead {
+            background-color: lightblue;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(52, 51, 51)
+        }
+
+        thead > tr > td:hover {
+            background-color: tomato;
+        }
+
+        tbody > tr > td:hover {
+            background-color: aqua;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid rgb(228, 226, 226);
+            transition: 1s ease;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(52, 51, 51);
+            transition: 1.5s ease;
+        }
+        a:hover {
+            color: rgb(87, 87, 247);
+            text-decoration: underline;
+        }
+
+        li {
+            list-style: none;
+            margin-right: 50px;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>AULA</h1>
+       
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <td><a href="tabela.html">Disciplina</a></td>
+                        <td><a href="aula.html">Aula</a></td>
+                        <td><a href="conteudo.html">Conteúdo</a></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lógica de Programação</td>
+                        <td>1</td>
+                        <td>Conceitos de algoritmos, variáveis, constantes, atribuição, entrada e saída</td>
+                    </tr>
+                    <tr>
+                        <td>Lógica de Programação</td>
+                        <td>2</td>
+                        <td>Comandos de Decisão</td>
+                    </tr>
+                    <tr>
+                        <td>Lógica de Programação</td>
+                        <td>2</td>
+                        <td>Comandos de Repetição</td>
+                    </tr>
+                    <tr>
+                        <td>Lógica de Programação</td>
+                        <td>2</td>
+                        <td>Vetor, Matriz, Procedimento e Função </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
