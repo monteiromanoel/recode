@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: lightgray;
+            margin: 0;
+        }
+
+        section {
+            background-color: white;
+            margin: auto;
+            padding: 40px;
+            width: fit-content;
+
+        }
+        
+        .titleList {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: blueviolet;
+            cursor: pointer;
+            transition: 0.7s ease;
+        }
+
+        .titleList:hover {
+            color: tomato;
+        }
+
+        div {
+            border: 1px solid rgb(179, 177, 177);
+            padding: 5px;
+            margin: 5px;
+            transition: 0.5s ease;
+            width: fit-content;
+        }
+        div:hover {
+            box-shadow: 3px 3px 5px rgb(169, 168, 168);
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(73, 73, 73);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>Lista Não Ordenada</h1>
+            <ul>
+                <li class="titleList">Atribuição</li>
+                <ul>
+                    <li>Variáveis</li>
+                    <li>Constantes</li>
+                    <li>Comando de Atribuição</li>
+                </ul>
+                <li class="titleList">Entrada / Saída</li>
+                <ul>
+                    <li>Comando de Entrada de dados</li>
+                    <li>Comando de Saída de dados</li>
+                </ul>
+                <li class="titleList">Decisão</li>
+                <ul>
+                    <li>Se / Então</li>
+                    <li>Se / Então / Senão</li>
+                </ul>
+                <li class="titleList">Repetição</li>
+                <li class="titleList">Vetor
+            </ul>
+        </div>
+        <div>
+            <h1>Lista Ordenada</h1>
+            <ol>
+                <li class="titleList">Atribuição</li>
+                <ol>
+                    <li>Variáveis</li>
+                    <li>Constantes</li>
+                    <li>Comando de Atribuição</li>
+                </ol>
+                <li class="titleList">Entrada / Saída</li>
+                <ol>
+                    <li>Comando de Entrada de dados</li>
+                    <li>Comando de Saída de dados</li>
+                </ol>
+                <li class="titleList">Decisão</li>
+                <ol>
+                    <li>Se / Então</li>
+                    <li>Se / Então / Senão</li>
+                </ol>
+                <li class="titleList">Repetição</li>
+                <li class="titleList">Vetor
+            </ol>
+        </div>
+    </section>
+</body>
+</html>
