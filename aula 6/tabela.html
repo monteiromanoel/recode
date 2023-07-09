@@ -85,14 +85,6 @@
             flex-wrap: wrap;
         }
 
-        #logica {
-            display: none;
-        }
-
-        #algoritmos {
-            display: none;
-        }
-
         .detalhes {
             padding: 25px;
         }
@@ -142,9 +134,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><span class="logica linkSpan" onclick="show()" >Lógica de Programação</span></td>
+                        <td><span class="logica linkSpan" >Lógica de Programação</span></td>
                         <td>1</td>
-                        <td><span class="algoritmos linkSpan" onclick="show2()">Conceitos de algoritmos</span>, variáveis, constantes, atribuição, entrada e saída</td>
+                        <td><span class="algoritmos linkSpan"><a href="algoritmos.html">Conceitos de algoritmos</a></span>, variáveis, constantes, atribuição, entrada e saída</td>
                     </tr>
                     <tr>
                         <td>Lógica de Programação</td>
@@ -165,22 +157,28 @@
             </table>
         </div>
 
-
-        <div class="detalhes" id="algoritmos">
-            <h2 class="tituloDiv">Algoritmos</h2>
+        <div class="detalhes" id="logica">
+            <h2 class="tituloDiv">Lógica de Programação</h2>
             <ul>
-                <li>O que são? </li>
+                <li>O que é? </li>
                 <ul>
                     <li>
                         <p class="paragDiv">
-                            Algoritmos são <strong>sequências de passos</strong> que seguimos com a intenção de <strong>atingir um objetivo</strong>, pode ser desde atravessar uma rua, fazer um bolo ou definir qual critério usar para aprovar ou reprovar um aluno, por exemplo.
+                            Cada pessoa define uma sequência de passos
+                             para fazer um bolo, podendo incluir ou remover alguns já definidos. Essa <strong>lógica</strong> é aplicada a qualquer coisa que fazemos diariamente e muitas das vezes não nos damos conta.
+                            <br> <br>
+                            Em atividades rotineiras, não costumamos prestar atenção quando seguimos uma mesma ordem para executar tarefas. Porém, <strong>quando o assunto é programar, definir as etapas do que deve ser feito assume uma grande importância</strong>, uma vez que instruir um computador ainda é bem diferente do que instruir uma pessoa.
+                            <br> <br>
+
+                            Quando a necessidade é desenvolver um programa ou rotina a ser executada pelo computador, precisamos deixar bem claro a sequência que deve ser seguida para atingir o resultado esperado. A esse <strong>encadeamento lógico</strong> na programação, chamamos de <strong>Lógica de Programação</strong>, e a descrição de como fazer, definimos como <strong>Algoritmos</strong>.
                             <div class="copy">Fonte: https://www.alura.com.br/artigos/algoritmos-e-logica-de-programacao</div>
                         </p>
                     </li>
                 </ul>
             </ul>
-
         </div>
+
+        
     </main>
 </body>
 </html>

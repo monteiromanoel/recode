@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 6 - Tabela</title>
+    <title>Aula 6 - Conteúdo</title>
     <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
@@ -30,11 +30,10 @@
             background-color: lightgray;
         }
 
-        h1 {
+        h1, h2, h3 {
             text-align: center;
             text-decoration: underline;
             color: tomato;
-            font-size: 50px;
         }
 
         table{
@@ -56,7 +55,7 @@
         }
 
         tbody > tr > td:hover {
-            background-color: aqua;
+            background-color: #00ffff;
         }
 
         td {
@@ -85,13 +84,45 @@
             display: flex;
             flex-wrap: wrap;
         }
-    </style>
 
+        .detalhes {
+            padding: 25px;
+        }
+
+        #lista {
+            display: block;
+        }
+
+        .paragDiv {
+            text-align: justify;
+        }
+
+        .tituloDiv {
+            text-align: center;
+        }
+
+        .copy {
+            font-style: italic;
+            font-size: 13px;
+            display: inline;
+        }
+
+        .linkSpan {
+            transition: 0.7s ease;
+        }
+
+        .linkSpan:hover {
+            color: blue;
+            text-decoration: underline;    
+        }
+
+        
+    </style>
 </head>
 <body>
     <main>
-        <h1>CONTEÚDO</h1>
-        
+        <h1>DISCIPLINA</h1>
+
         <div>
             <table>
                 <thead>
@@ -103,9 +134,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Lógica de Programação</td>
+                        <td><span class="logica linkSpan"><a href="tabela.html">Lógica de Programação</a></span></td>
                         <td>1</td>
-                        <td>Conceitos de algoritmos, variáveis, constantes, atribuição, entrada e saída</td>
+                        <td><span class="algoritmos linkSpan">Conceitos de algoritmos</span>, variáveis, constantes, atribuição, entrada e saída</td>
                     </tr>
                     <tr>
                         <td>Lógica de Programação</td>
@@ -125,6 +156,23 @@
                 </tbody>
             </table>
         </div>
+
+        <div class="detalhes" id="algoritmos">
+            <h2 class="tituloDiv">Algoritmos</h2>
+            <ul>
+                <li>O que são? </li>
+                <ul>
+                    <li>
+                        <p class="paragDiv">
+                            Algoritmos são <strong>sequências de passos</strong> que seguimos com a intenção de <strong>atingir um objetivo</strong>, pode ser desde atravessar uma rua, fazer um bolo ou definir qual critério usar para aprovar ou reprovar um aluno, por exemplo.
+                            <div class="copy">Fonte: https://www.alura.com.br/artigos/algoritmos-e-logica-de-programacao</div>
+                        </p>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+
+        
     </main>
 </body>
 </html>
