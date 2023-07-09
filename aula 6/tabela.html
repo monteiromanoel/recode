@@ -30,7 +30,7 @@
             background-color: lightgray;
         }
 
-        h1, h3 {
+        h1, h2, h3 {
             text-align: center;
             text-decoration: underline;
             color: tomato;
@@ -55,7 +55,7 @@
         }
 
         tbody > tr > td:hover {
-            background-color: aqua;
+            background-color: #00ffff;
         }
 
         td {
@@ -85,16 +85,51 @@
             flex-wrap: wrap;
         }
 
+        #logica {
+            display: none;
+        }
+
+        #algoritmos {
+            display: none;
+        }
+
+        .detalhes {
+            padding: 25px;
+        }
+
         #lista {
             display: block;
         }
+
+        .paragDiv {
+            text-align: justify;
+        }
+
+        .tituloDiv {
+            text-align: center;
+        }
+
+        .copy {
+            font-style: italic;
+            font-size: 13px;
+            display: inline;
+        }
+
+        .linkSpan {
+            transition: 0.7s ease;
+        }
+
+        .linkSpan:hover {
+            color: blue;
+            text-decoration: underline;    
+        }
+
+        
     </style>
 </head>
 <body>
     <main>
         <h1>DISCIPLINA</h1>
-        
-        <h3><a href="lista.html">LISTAS</a></h3>
 
         <div>
             <table>
@@ -107,9 +142,9 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Lógica de Programação</td>
+                        <td><span class="logica linkSpan" onclick="show()" >Lógica de Programação</span></td>
                         <td>1</td>
-                        <td>Conceitos de algoritmos, variáveis, constantes, atribuição, entrada e saída</td>
+                        <td><span class="algoritmos linkSpan" onclick="show2()">Conceitos de algoritmos</span>, variáveis, constantes, atribuição, entrada e saída</td>
                     </tr>
                     <tr>
                         <td>Lógica de Programação</td>
@@ -128,6 +163,23 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+
+
+        <div class="detalhes" id="algoritmos">
+            <h2 class="tituloDiv">Algoritmos</h2>
+            <ul>
+                <li>O que são? </li>
+                <ul>
+                    <li>
+                        <p class="paragDiv">
+                            Algoritmos são <strong>sequências de passos</strong> que seguimos com a intenção de <strong>atingir um objetivo</strong>, pode ser desde atravessar uma rua, fazer um bolo ou definir qual critério usar para aprovar ou reprovar um aluno, por exemplo.
+                            <div class="copy">Fonte: https://www.alura.com.br/artigos/algoritmos-e-logica-de-programacao</div>
+                        </p>
+                    </li>
+                </ul>
+            </ul>
+
         </div>
     </main>
 </body>
