@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(81, 81, 81);
+        }
+        body {
+            background-color: lightgray;
+            margin: 0;
+        }
+        h1 {
+            padding: 8px;
+        }
+        .mainField {
+            margin-top: 10px;
+            box-shadow: 5px 5px rgba(10, 10, 10, 0.418);
+        }
+        fieldset{
+            width: fit-content;
+            transition: 0.4s ease;
+            background-color: white;
+            margin: auto;
+            padding: auto;
+            margin-top: 10px;
+
+        }
+        fieldset:hover {
+            box-shadow: 5px 5px rgba(10, 10, 10, 0.418);
+        }
+        legend {
+            background-color: rgb(111, 111, 246);
+            padding: 6px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 2px 2px rgba(10, 10, 10, 0.418);
+            margin: 3px;
+        }
+        form, h1 {
+            width: fit-content;
+            margin: auto;
+            padding: auto;
+        }
+        .btEnviar {
+            width: fit-content;
+            margin: auto;
+            padding: auto;
+        }
+        #btEnviar {
+            border: none;
+            width: fit-content;
+            background-color: rgb(111, 111, 246);
+            color: white;
+            cursor: pointer;
+            transition: 0.5s ease;
+            font-size: 20px;
+            padding: 8px;
+            
+        }
+        #btEnviar:hover {
+            box-shadow: 2px 2px rgba(10, 10, 10, 0.418);
+        }
+        label {
+            font-weight: bold;
+        }
+
+        span {
+            font-size: 23px;
+        }
+
+        .radio > p > label {
+            padding: 6px;
+        }
+
+        .radio > p > label:hover {
+            background-color: rgb(111, 111, 246);
+            color: white;
+            box-shadow: 2px 2px rgba(10, 10, 10, 0.418);
+        }
+        div {
+            margin-top: 10px;
+        }
+        input[type="radio"] {
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <fieldset class="mainField">
+        <h1>Formulário</h1>
+        <form>
+            <fieldset class="dadosUsuario">
+                <form>
+                    <p><label for="nome">Nome: </label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                    </p>
+                    <p>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                    </p>
+                    <p>
+                        <label for="tel">Telefone: </label>
+                        <input type="tel" name="telefone" id="tel" placeholder="(**)****-****">
+                    </p>
+                    <p>
+                        <label for="dataNasc">Data de Nascimento: </label>
+                        <input type="date" name="dataNasc" id="dataNasc">
+                    </p>
+                </form>
+            </fieldset>
+
+            <fieldset class="dadosProfissao">
+                <legend>Profissão</legend>
+                <form class="radio">
+                    <p>
+                        <label for="analista">Analista de Sistemas</label>
+                        <input type="radio" id="analista" name="profissao">
+                        <span> // </span>
+        
+                        <label for="projSis">Projetista de Sistemas</label>
+                        <input type="radio" id="projSis" name="profissao"> 
+                        <span> // </span>
+                        
+                        <label for="progFrEnd">Programador Front-End</label>
+                        <input type="radio" id="progFrEnd" name="profissao">
+                        <span> // </span>
+                        
+                        <label for="progBcEnd">Programador Back-End</label>
+                        <input type="radio" id="progBcEnd" name="profissao">
+                        <span> // </span>
+                        
+                        <label for="progFull">Programador Full-Stack</label>
+                        <input type="radio" id="progFull" name="profissao">
+                    </p>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <label for="estado"> Selecione o Estado: </label>
+                <select id="estado" name="estado">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </select>
+            </fieldset>
+            <div>
+                <p class="btEnviar">
+                    <input type="submit" value="Enviar os Dados" id="btEnviar">
+                </p>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>

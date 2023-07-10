@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-image: url("pizza.png");
+            background-repeat: repeat;
+        }
+        main {
+            width: 40vw;
+            height: 90vh;
+            background-color: white;
+            margin: auto;
+            padding-top: 30px;
+        }
+        h1 {
+            text-align: center;
+            padding: 10px;
+            background-color: #EEB506;
+            color: white;
+            box-shadow: 5px 5px rgb(165, 165, 165);
+            width: 300px;
+        }
+        .titulo {
+            width: fit-content;
+            margin: auto;
+        }
+        fieldset {
+            width: fit-content;
+            margin: auto;
+        }
+        input {
+            margin-right: 10px;
+        }
+        input[id="numEnd"] {
+            width: 30px;
+        }
+        span {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .button {
+            width: fit-content;
+            margin: auto;
+            padding: auto;
+            margin-top: 10px;
+        }
+        input[type="submit"] {
+            border: none;
+            padding: 15px;
+            background-color: tomato;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.7s ease;
+        }
+        input[type="submit"]:hover {
+            box-shadow: 5px 5px rgb(165, 165, 165);    
+        }
+        input[type="checkbox"], input[type="radio"] {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="titulo">
+            <h1>PEDIDO PIZZARIA</h1>
+        </div>
+        <fieldset>
+            <form>
+                <p>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+                </p>
+                <p>
+                    <label for="tel">Telefone: </label>
+                    <input type="tel" id="tel" placeholder="(**)*****-****">
+                    <label for="wp">É WhatsApp? </label> <input type="checkbox" name="wp" id="wp">
+                </p>
+                <p>
+                    <label for="endereco">Endereço: </label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço">
+                    <label for="numEnd">Nº: <input type="text" name="numEnd" id="numEnd"></label>    
+                </p>
+                <fieldset>
+                    <legend>Escolha a Pizza</legend>
+                    <p>
+                        <h4>Uma Opção: </h4>
+                        <label for="tamanho">Tamanho: </label>
+                        <select name="tamanho" id="tmPizza">
+                            <option value="br">Brotinho</option>
+                            <option value="br">Pequena</option>
+                            <option value="br">Média</option>
+                            <option value="br">Grande</option>
+                        </select>
+
+                        <span> || </span>
+
+                        <label for="sabor">Sabor: </label>
+                        <select name="sabor" id="sbPizza">
+                            <option value="br">Calabresa</option>
+                            <option value="br">Mussarella</option>
+                            <option value="br">Frango</option>
+                            <option value="br">Peperoni</option>
+                        </select>
+
+                        <p>
+                            <h4>Várias Opções: </h4>
+                            <label for="catu">Catupiry: </label>
+                            <input type="checkbox" name="extra" id="catu">
+
+                            <label for="catu">Mais Mussarella: </label>
+                            <input type="checkbox" name="extra" id="muss">
+
+                            <label for="manj">Mais Manjericão: </label>
+                            <input type="checkbox" name="extra" id="manj">
+                        </p>
+
+                    </p>
+                </fieldset>
+                <p class="button">
+                    <input type="submit" value="Fazer Pedido">
+                </p>
+            </form>
+        </fieldset>
+    </main>
+</body>
+</html>
