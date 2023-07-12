@@ -1,0 +1,21 @@
+.externo {
+    color: chartreuse;
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+.paraVerm {
+    color: red;
+}
+
+.paragAzul {
+    color: blue;
+}
+
+.bgAma {
+    background-color: yellow;
+    width: fit-content;
+    padding: 3px;
+    font-weight: bold;
+}
