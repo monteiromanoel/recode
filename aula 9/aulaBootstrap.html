@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        Esse link abaixo adiciona o Bootstrap ao projeto 
+    -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        .cBoo {
+            background-color: yellow;
+        }
+
+        .cBootsB {
+            background-color: lightcoral;
+        }
+
+        .sBoo {
+            background-color: cornflowerblue;
+        }
+        .texto {
+            font-family: monospace;
+        }
+
+        .col-sm, .col-md, .col-lg, .col-xl {
+            background-color: lightgray;
+            border: 1px solid #eeeeee;
+        }
+
+    </style>
+    <title>Aula Bootstrap</title>
+</head>
+<body>
+    <div class="container cBoo">
+        <p>Bootstrap com Breakpoints</p>
+    </div>    
+
+    <div class="container-fluid cBootsB">
+        <p>Bootstrap sem Breakpoints</p>
+    </div>    
+
+    <div class="sBoo">
+        <p>Sem Bootstrap</p>
+    </div>
+
+    <pre>
+        <h1>Media Queries Mais Utilizados</h1>
+        <div class="texto">
+            @media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+            @media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+            @media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+            @media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+            @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+            @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+        </div>
+    </pre>
+
+    <h1>Coluna Exemplo de row e col</h1>
+    
+    <div class="container"> 
+        <div class="row">
+            <div class="col-sm">
+                Uma de três colunas sm
+            </div>
+            <div class="col-sm">
+                Duas de três colunas sm
+            </div>
+            <div class="col-sm">
+                Três de três colunas sm
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                Uma de três colunas md
+            </div>
+            <div class="col-md">
+                Duas de três colunas md
+            </div>
+            <div class="col-md">
+                Três de três colunas md
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg">
+                Uma de três colunas lg
+            </div>
+            <div class="col-lg">
+                Duas de três colunas lg
+            </div>
+            <div class="col-lg">
+                Três de três colunas lg
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl">
+                Uma de três colunas xl
+            </div>
+            <div class="col-xl">
+                Duas de três colunas xl
+            </div>
+            <div class="col-xl">
+                Três de três colunas xl
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">Coluna 1(linha 1)</div>
+            <div class="col-sm">Coluna 2(linha 1)</div>
+            <div class="col-sm">Coluna 3(linha 1)</div>
+            <div class="col-sm">Coluna 4(linha 1)</div>
+        </div>
+        <div class="row">
+            <div class="col-sm">Coluna 1(linha 2)</div>
+            <div class="col-sm">Coluna 2(linha 2)</div>
+            <div class="col-sm">Coluna 3(linha 2)</div>
+        </div>
+    </div>
+
+    <h1>Exemplos de cores</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm bg-primary text-white">primary</div>
+            <div class="col-sm bg-secondary text-white">secondary</div>
+            <div class="col-sm bg-success text-white">success</div>
+        </div>
+        <div class="row">
+            <div class="col-sm bg-danger text-white">danger</div>
+            <div class="col-sm bg-warning text-dark">warning</div>
+            <div class="col-sm bg-info text-white">info</div>
+        </div>
+        <div class="row">
+            <div class="col-sm bg-light">light</div>
+            <div class="col-sm bg-dark text-white">dark</div>
+            <div class="col-sm bg-white">white</div>
+        </div>
+    </div>
+
+    <h1>Jumbotron</h1>
+    
+    <div class="jumbotron">
+        <h1 class="display-4">Chamando atenção</h1>
+        <p class="lead">
+            Jumbotron é usado para chamar a atenção. Essa área cinza é toda dele.
+        </p>
+        <hr class="my-4">
+        <a class="btn btn-primary btn-lg " href="#" role="button">Clique</a>
+    </div>
+   
+    <h1>Alertas</h1>
+    <div class="container">
+        <div class="alert alert-primary">Um alerta Primary</div> 
+
+        <div class="alert alert-secondary">Um alerta Secondary</div>
+        
+        <div class="alert alert-success">Um alerta Success</div>
+
+        <div class="alert alert-danger">Um alerta Danger</div>
+    </div>
+</body>
+</html>
