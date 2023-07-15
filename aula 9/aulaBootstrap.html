@@ -6,7 +6,8 @@
     <!--
         Esse link abaixo adiciona o Bootstrap ao projeto 
     -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <style>
         .cBoo {
@@ -33,6 +34,24 @@
     <title>Aula Bootstrap</title>
 </head>
 <body>
+    <div class="modal fade" tabindex="-1" role="dialog" id="modalExemplo">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Título do Modal</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Fechar">Fechar</button>
+                </div>
+                <div class="modal-body">
+                    <p>Texto do Modal</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar Mudanças</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container cBoo">
         <p>Bootstrap com Breakpoints</p>
     </div>    
@@ -160,6 +179,171 @@
         <div class="alert alert-success">Um alerta Success</div>
 
         <div class="alert alert-danger">Um alerta Danger</div>
+
+        <div class="alert alert-warning">Um alerta Warning</div>
+
+        <div class="alert alert-info">Um alerta Info</div>
+    
+        <div class="alert alert-light">Um alerta Light</div>
+
+        <div class="alert alert-dark">Um alerta Dark</div>
     </div>
+
+    <h1>Tabelas</h1>
+
+    <table class="table">
+        <th>
+            <tr class="bg-info text-white">
+                <td>Coluna 1</td>
+                <td>Coluna 2</td>
+                <td>Coluna 3</td>
+                <td>Coluna 4</td>
+                <td>Coluna 5</td>
+                <td>Coluna 6</td>
+            </tr>
+            </tr>
+        </th>
+        <tbody>
+            <tr>
+                <td>Célula</td>
+                <td>Célula</td>
+                <td>Célula</td>
+                <td>Célula</td>
+                <td>Célula</td>
+                <td>Célula</td>
+            </tr>
+            <tr>
+                <td>Célula</td>
+                <td>Célula</td>
+                <td>Célula</td>
+                <td>Célula</td>
+                <td>Célula</td>
+                <td>Célula</td>
+            </tr>
+            <tr>
+                <td>Célula</td>
+                <td>Célula</td>
+                <td>Célula</td>
+                <td>Célula</td>
+                <td>Célula</td>
+                <td>Célula</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Tabela com table-responsive</h2>
+    <div class="table-responsive">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th>Coluna 2</th>
+                    <th>Coluna 3</th>
+                    <th>Coluna 4</th>
+                    <th>Coluna 5</th>
+                    <th>Coluna 6</th>
+                    <th>Coluna 7</th>
+                </tr>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Célula</td>
+                    <td>Célula</td>
+                    <td>Célula</td>
+                    <td>Célula</td>
+                    <td>Célula</td>
+                    <td>Célula</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Célula</td>
+                    <td>Célula</td>
+                    <td>Célula</td>
+                    <td>Célula</td>
+                    <td>Célula</td>
+                    <td>Célula</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Célula</td>
+                    <td>Célula</td>
+                    <td>lorem</td>
+                    <td>Célula</td>
+                    <td>Célula</td>
+                    <td>Célula</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h1>Formulários</h1>
+
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="exemploEmail">Insira o E-mail: </label>
+                <input type="email" name="email" id="exemploEmail" class="form-control">
+                <small class="form-text text-muted">Nunca compartilharemos seu e-mail com ninguém.</small>
+                </div>
+            <div class="form-group">
+                <label for="exemploSenha">Insira a Senha: </label>
+                <input type="password" name="senha" id="exemploSenha" class="form-control">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" name="check" id="exemploCheck" class="form-check-input">
+                <label for="exemploCheck">Clique em mim!</label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </div>
+        </form>
+    </div>
+
+    <h1>Botões</h1>
+
+    <div class="container">
+        <p>Existem vários tipos de botões, e o uso de cada um vai variar conforme a necessidade. As cores podem ser adicionadas com o padrão do Bootstrap também.</p>
+    </div>
+    <div class="container">
+        <a href="#" class="btn btn-primary" role="button">Link</a>
+        <button class="btn btn-secondary" type="submit">Botão</button>
+        <input type="button" class="btn btn-danger btn-lg" type="button" value="Input (btn-lg)">
+        <input type="button" class="btn btn-dark btn-sm" type="submit" value="Submit (btn-sm)">
+        <input type="reset" class="btn btn-info btn-block" value="Reset (btn-block)">
+
+        <button class="btn btn-link" type="button">Link</button>
+    </div>
+    
+    <h1>Navbar</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a href="#" class="navbar-brand">Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNav" arial-controls="navbarNav" aria-expanded="false" aria-label="Alterna Navegação"><span class="navbar-toggler-icon"></span></button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Nossa História</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Inclusão Digital</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Cursos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Modal</h1>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">Abrir Modal</button>
+
+    
 </body>
 </html>
